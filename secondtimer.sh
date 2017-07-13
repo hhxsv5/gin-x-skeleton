@@ -8,7 +8,7 @@ do
         echo "Process Count: $process_num"
         if [ $process_num -gt 1 ]
         then
-            ps -ef|grep "$process_name"|grep -v grep|awk '{print $2}'|xargs kill -USR1
+            ps -ef|grep "$process_name"|grep -v grep|awk '{print $2}'|xargs kill -9
             echo "Killed: $process_num"
         fi
         #注意结尾的&，进入后台执行，不阻塞
