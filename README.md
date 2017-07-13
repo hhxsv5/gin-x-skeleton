@@ -1,3 +1,3 @@
-# 秒级定时器
-## 简单实现，对于定时精准度要求不高的可以采用
-## 无人值守：supervisord管理
+# second-level timer
+Implements simply by shell `while` and `sleep`
+Unattended by supervisord
