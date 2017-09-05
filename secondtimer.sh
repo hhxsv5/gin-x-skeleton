@@ -5,14 +5,11 @@ do
         process_name='/xxpath/bin/php /yypath/test.php'
         #进程数检查，避免异常情况阻塞启用更多的进程
         process_num=$(ps -ef|grep "$process_name"|grep -v grep|wc -l)
-        echo "Process Count: $process_num"
-        if [ $process_num -gt 1 ]
+        if [ $process_num -eq 0 ]
         then
-            ps -ef|grep "$process_name"|grep -v grep|awk '{print $2}'|xargs kill -9
-            echo "Killed: $process_num"
+            #注意结尾的&，进入后台执行，不阻塞
+            $($process_name >> /dev/null 2>&1 &)
         fi
-        #注意结尾的&，进入后台执行，不阻塞
-        $($process_name >> /dev/null 2>&1 &)
         #每秒执行
         sleep 1;
 done
