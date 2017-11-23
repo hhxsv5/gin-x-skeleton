@@ -1,15 +1,14 @@
 #!/bin/bash
 while true;
 do
-        #需要定时执行的命令
         process_name='/xxpath/bin/php /yypath/test.php'
-        #进程数检查，避免异常情况阻塞启用更多的进程
+        #skip existent process
         process_num=$(ps -ef|grep "$process_name"|grep -v grep|wc -l)
         if [ $process_num -eq 0 ]
         then
-            #注意结尾的&，进入后台执行，不阻塞
+            #& run in background, no blocking
             $($process_name >> /dev/null 2>&1 &)
         fi
-        #每秒执行
+        #per second, you can change this interval according to the actual situation
         sleep 1;
 done
