@@ -1,9 +1,11 @@
-# Golang WEB 框架的骨架
+# The skeleton for Gin-X framework.
 
-# 使用
+# Usage
 
-1. 拷贝整个工程，除了`.gitignore`
+1. Copy this project into your project, except `.gitignore`.
 
-2. 修改包名
+2. Copy config.toml.example into config.toml.
 
 3. `dep init -v`
+
+4. `./build-debug.sh`
