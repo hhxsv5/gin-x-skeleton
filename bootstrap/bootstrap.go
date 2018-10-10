@@ -9,9 +9,9 @@ import (
 	"strconv"
 
 	"github.com/hhxsv5/gin-x/config"
-	_ "github.com/hhxsv5/gin-x/db/mysql"
 	"github.com/hhxsv5/gin-x/log"
-	"gitlab.kucoin.net/golang/skeleton/app/cron"
+	"github.com/hhxsv5/gin-x-skeleton/app/cron"
+	_ "github.com/hhxsv5/gin-x/db/mysql"
 	//_ "github.com/hhxsv5/gin-x/db/postgresql"
 )
 
