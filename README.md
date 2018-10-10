@@ -1,4 +1,4 @@
-# The skeleton for Gin-X framework.
+# The skeleton for [Gin-X](https://github.com/hhxsv5/gin-x) framework.
 
 # Usage
 
