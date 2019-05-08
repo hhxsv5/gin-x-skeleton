@@ -6,6 +6,14 @@
 
 2. Copy config.toml.example into config.toml.
 
-3. `dep init -v`
+3. Start Http Server.
 
-4. `./build-debug.sh`
+```bash
+# http://127.0.0.1:8000 && http://127.0.0.1:5200
+./build-debug.sh
+
+# OR
+
+# http://127.0.0.1:5200
+go run main.go
+```
