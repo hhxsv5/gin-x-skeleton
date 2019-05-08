@@ -7,7 +7,6 @@
 2. Copy config.toml.example into config.toml.
 
 3. Start Http Server.
-
 ```bash
 # http://127.0.0.1:8000 && http://127.0.0.1:5200
 ./build-debug.sh
