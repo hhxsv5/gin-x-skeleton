@@ -3,3 +3,4 @@ runtime/*
 vendor
 Gopkg.*
 go.*
+.idea

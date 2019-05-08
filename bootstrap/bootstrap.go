@@ -10,6 +10,7 @@ import (
 
 	"github.com/hhxsv5/gin-x/config"
 	"github.com/hhxsv5/gin-x/log"
+
 	"github.com/hhxsv5/gin-x-skeleton/app/cron"
 	_ "github.com/hhxsv5/gin-x/db/mysql"
 	//_ "github.com/hhxsv5/gin-x/db/postgresql"

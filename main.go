@@ -5,14 +5,15 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/gobuffalo/packr"
 	"github.com/gin-gonic/gin"
+	"github.com/gobuffalo/packr"
 	"github.com/hhxsv5/gin-x-skeleton/app/http/controllers"
 	"github.com/hhxsv5/gin-x/config"
 	"github.com/hhxsv5/gin-x/enums/codes"
 	"github.com/hhxsv5/gin-x/middleware"
 	"github.com/hhxsv5/gin-x/response"
 	"github.com/hhxsv5/gin-x/router"
+
 	_ "github.com/hhxsv5/gin-x-skeleton/bootstrap"
 )
 
