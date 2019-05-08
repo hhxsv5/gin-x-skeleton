@@ -2,11 +2,11 @@
 
 # Usage
 
-1. Copy this project into your project, except `.gitignore`.
+1.Copy this project into your project.
 
-2. Copy config.toml.example into config.toml.
+2.Copy config.toml.example into config.toml.
 
-3. Start Http Server.
+3.Start Http Server.
 ```bash
 # http://127.0.0.1:8000 && http://127.0.0.1:5200
 ./build-debug.sh
